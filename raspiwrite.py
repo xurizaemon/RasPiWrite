@@ -1,29 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python   
 
-#   ;d0KOd.  .oOK0x:  
-#  0xlllcoxolkolllloX 
-#  ;OccloddKNdxdocckc 
-#   .dkddkWNNMOdoxd,  
-#   .o:,x0....xd,ck'  
-#   K:xOoloOOccloocW  
-# .x;N:....xO....'K;k,
-# O..Nc...:XNl...:X.,X
-# .kkx0NXk'...dNNxldK'
-#  'k...0o....,O...d: 
-#   ;o;'oM0olkWc.;oc  
-#     .cOx....dOl.    
-#        .x00k.    
-
-#//////////////////////////// 
-#	* Raspberry Pi SD Writer 
-#	* Matt Jump
-#	* exaviorn.com
-#///////////////////////////
-# Copyright Matthew Jump 2012
-# The following code is licenced under the Gnu Public Licence, please see gpl.txt for reference
-#  This program is free software: you can redistribute it and/or modify
+#    Raspberry Pi SD Writer - a Python script for writing RPi distros to SDs
+# 
+#    Original code copyright (c) 2012 Matthew Jump
+#    Modifications copyright (c) 2013 Patrick Knight
+# 
+#    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
-#   the Free Software Foundation, either version 3 of the License, or
+#    the Free Software Foundation, either version 3 of the License, or
 #    (at your option) any later version.
 #
 #    This program is distributed in the hope that it will be useful,
@@ -33,12 +17,6 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-# VERSION 1.15 -MACOSX- (June 2012) BETA
-#	* Fix to unzipping system - credit to alecthegeek
-#	* More user friendly device selection, no chance of the root or time machine backup drive being selected
-#	* Some spelling and grammar corrections
-#	* FINALLY drag/drop file support, with full path support, e.g. /Users/me/Downloads - Thanks to Lewis Boon
 
 import re, os, urllib2, time, sys, threading
 from commands import *
