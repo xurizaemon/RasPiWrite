@@ -238,14 +238,14 @@ GNU General Public License for more details.
   print '###################################################################\n'
   confirm = raw_input(boldStart + 'Please verify this information before typing \'accept\' to accept the terms and to start the process, if this information isn\'t correct, please press ctrl + c (^C), or type \'exit\' to quit: ' + end)
   if confirm == 'accept':
-      thread1 = transferInBackground()
-      thread1.start()
+    thread1 = transferInBackground()
+    thread1.start()
     sys.stdout.write('Waiting')
-      sys.stdout.flush()
+    sys.stdout.flush()
     while thread1.isAlive():
       time.sleep(3)
       sys.stdout.write('.')
-        sys.stdout.flush()
+      sys.stdout.flush()
       print 'Transfer Complete! Please remove the SD card'
       print '''###########################################
 Relevent information:
